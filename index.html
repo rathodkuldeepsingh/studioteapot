@@ -2,12 +2,23 @@
 <!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><link rel="icon" href="#"><title>StudioTeapot</title> <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"><link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
 </head>
+<style>
+@keyframes roto{
+0%{transform:rotateY(0deg);}
+50%{transform:rotateY(90deg);}
+100%{transform:rotateY(180deg);}
+}
+.logo{
+animation: roto 2s linear;
+}
+	
+</style>
 
 <body style="background-image:url('back.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-position:top center; background-size:cover">
 	 <div class="container col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
 	 
-	 		<img class="img-responsive center-block"src="logo.png" alt="" style="width:80%; height:auto; margin-bottom:-30%"/>
-	 		<img class="img-responsive"src="text.png" alt="" style="width:100%; height:auto;"/>
+	 		<img class="logo img-responsive center-block"src="logo.png" alt="" style="width:80%; height:auto; margin-bottom:-30%"/>
+	 		<img class="logo-txt img-responsive"src="text.png" alt="" style="width:100%; height:auto;"/>
 	 		
 	 
 	 </div>
