@@ -4,12 +4,26 @@
 
 <style>
 @keyframes roto{
-0%{transform:rotateY(0deg);}
-50%{transform:rotateY(180deg);}
-100%{transform:rotateY(360deg);}
+0%{transform:rotateY(0deg),scale(0.1);}
+20%{transform:rotateY(360deg), scale(0.2);}
+40%{transform:rotateY(720deg), scale(0.4);}
+60%{transform:rotateY(900deg), scale(0.6);}
+80%{transform:rotateY(990deg), scale(0.8);}
+100%{transform:rotateY(1080deg), scale(1);}
+}
+
+@keygrames opa
+{
+0%{opacity:0;}
+30%{opacity:0;}
+100%{opacity:1;}
 }
 .logo{
-animation: roto 2s linear infinite;
+animation: roto 6s 3s linear 1, opa 6s linear;
+}
+
+.logo-text{
+animation:opa 2s 5s linear;
 }
 	
 </style>
